@@ -1,0 +1,9 @@
+{
+  "name": "sandbox-javascript-twilio-whatsapp",
+  "version": "0.0.1",
+  "description": "sandbox-javascript-twilio-whatsapp",
+  "main": "index.js",
+  "author": "baob",
+  "license": "MIT",
+  "private": true
+}
