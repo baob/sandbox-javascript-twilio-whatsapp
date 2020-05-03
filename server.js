@@ -11,6 +11,7 @@ const port = config.port() || 3000;
 const app = express();
 
 app.post('/', (req, res) => {
+    console.log('req:', req)
     const twiml = new MessagingResponse();
 
     twiml.message('The Robots are coming! Head for the hills!');
