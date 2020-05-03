@@ -21,9 +21,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/', (req, res) => {
     console.log('req.body:', req.body)
+    const textReceived = req.body.Body;
+
     const twiml = new MessagingResponse();
 
-    twiml.message('The Robots are coming! Head for the hills!');
+    twiml.message(`I can see you said  "${textReceived}" but do not have a programmed response for that.`);
 
     res.writeHead(200, { 'Content-Type': 'text/xml' });
     res.end(twiml.toString());
